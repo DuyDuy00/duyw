@@ -1,0 +1,459 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@800&display=swap');
+.be-vietnam-pro-extrabold {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+h1{font-family: "Be Vietnam Pro", sans-serif;}
+body{
+	font-family: arial; font-size: 16px; color: #666666; margin: 0
+}
+.top-bar{
+	width: 100%; height: 40px; line-height: 40px ; color: red; position: absolute; left: 0; top: 0 ; z-index: 10; background-color: black
+}
+.logo{
+	padding-top: 20px
+}
+.logo a{
+	text-decoration: none; font-size: 35px; font-weight: bold;color: darkblue
+}
+.logo a:hover{
+	color: red
+}
+header{
+	width: 100% ; height: 80px; position: absolute; left:0 ; top: 40px ; z-index: 10
+}
+.menu ul{
+	margin: 20px; padding: 0;list-style: none ; display: flex
+}
+.menu{
+	padding-top: 10px 
+}
+.menu ul li a{
+	padding: 10px 20px; text-decoration: none ; font-size: 20px ; text-transform: uppercase ; color: white; display: block
+}
+.menu ul li a:hover{
+	background-color: w; color: black
+}
+/*dropdown*/
+.menu ul li{
+	position: relative
+}
+.menu .dropdown{
+position: absolute; left: 0 ; top: 100% ; display: flex;flex-direction: column; width: 250px; background-color: rgba(0,0,0,0.30); display: none
+}
+.dropdown li{
+	border-bottom: 1px solid white 
+}
+.menu li:hover .dropdown{
+	display: block
+}
+main{
+	width: 100%; min-height: 500px; background-color: black
+}
+.gach-chan{
+	border-bottom: 2px solid #F10004
+}
+.vien{
+width: 100%; min-height: 200px;  border: 1px solid #FF0000; padding: 10px; margin-top: 30px
+}
+.text-do{
+	color: darkred
+}
+.hinh {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+.hinh img {
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.hinh:hover img {
+  transform: scale(1.1); /* Phóng to hình */
+}
+
+.icon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 1.00);
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+
+.hinh:hover .icon {
+  transform: translateY(0);/* Hiện chữ */
+}
+
+.icon a {
+  text-decoration: none;
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.icon a:hover {
+  color: white;
+}
+/*phan carousel*/
+#slide .owl-dots{ position:absolute; bottom: 10px; left:45%;}
+#slide .owl-dots .owl-dot span {
+      width: 12px;
+      height: 12px; 	
+}
+#slide .owl-nav { position:absolute; left:0px; top:40%; width:100%; }
+#slide .owl-nav [class*='owl-'] {
+	font-size:60px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: royalblue
+}
+
+#slide .owl-nav .owl-next{ position:absolute; right:5%;}
+#slide .owl-nav .owl-prev{ position:absolute; left:5%;}
+#slide .owl-nav [class*='owl-']:hover {
+      background:none;border: none;
+      color:red;
+      text-decoration: none; }.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.logo-column {
+  flex: 1 1 100px;
+}
+
+.footer-logo {
+  width: 80px;
+}
+
+.social-icons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons i {
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+  color: #ff2d55;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 20px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #aaa;
+}
+/*index*/
+.banner{
+	width: 100%; min-height: 50px ; position: relative
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 5px;
+}
+
+.logo img {
+  height: 150px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.menu > li {
+  position: relative;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 10px;
+  display: block;
+  cursor: pointer;
+}
+
+.menu li a:hover {
+  text-decoration: underline;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: red;
+  min-width: 150px;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown li {
+  border-bottom: 1px solid #333;
+}
+
+.dropdown li:last-child {
+  border-bottom: none;
+}
+
+.dropdown li a {
+  padding: 5px;
+  font-size: 20px;
+}
+
+.menu li:hover .dropdown {
+  display: block;
+}
+
+.show-dropdown {
+  display: block;
+}
+
+.main-title {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.main-title h1 {
+  font-size: 120px;
+  font-weight: bold;
+  color: #e6011c;
+  margin: 0;
+}
+/*cuối*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+ 
+}
+
+.overlay h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.cta-button {
+  background-color: #FFD700;
+  color: white;
+  padding: 12px 24px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #f0c800;
+}
+/*CUỐI INDEX*/
+.team-roster {
+  width: 80%;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+}
+
+.role-group {
+  margin-bottom: 40px;
+}
+
+.role-group h2 {
+  color: #e6011c;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.player-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.player {
+  text-align: center;
+  width: 100px;
+}
+
+.player img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #e6011c;
+}
+
+.player p {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.contact-wrapper {
+	display: flex;
+	gap: 40px;
+	margin-top: 40px;
+	flex-wrap: wrap;
+}
+
+/* Form liên hệ */
+.contact-form {
+	flex: 1; /* Chiếm 1 phần đều */
+	min-width: 300px; /* Chiều rộng tối thiểu */
+}
+
+/* Tiêu đề form liên hệ */
+.contact-form h2 {
+	color: #0066cc; /* Xanh dương */
+	margin-bottom: 20px;
+}
+
+/* Ô input và textarea */
+.contact-form input,
+.contact-form textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc; /* Viền xám nhạt */
+}
+
+/* Nút gửi form */
+.contact-form button {
+	padding: 10px 20px;
+	background-color: #007BFF; /* Nền xanh dương */
+	color: white;
+	border: none;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.3s ease; /* Hiệu ứng khi hover */
+}
+
+/* Hiệu ứng hover nút gửi */
+.contact-form button:hover {
+	background-color: #0056b3; /* Xanh dậm hơn */
+}
+
+/* Thông tin văn phòng */
+.office-info {
+	flex: 1;
+	min-width: 300px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	 margin-bottom: 40px; /* Thêm dòng này */
+}
+
+/* Hộp thông tin mỗi văn phòng */
+.office-box {
+	border: 1px solid #ccc;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+/* Bản đồ trong mỗi văn phòng */
+.office-box iframe {
+	border: 0;
+	width: 100%;
+	height: 200px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+/* Tiêu đề văn phòng */
+.office-box h3 {
+	margin-bottom: 5px;
+	color: red;
+	font-weight: bold;
+}
+.contact-section {
+  background-color: #000; /* nền đen */
+  padding: 60px 0; /* tạo khoảng cách trên dưới */
+  color: white; /* chữ trắng cho dễ đọc */
+}
+
+.contact-wrapper input,
+.contact-wrapper textarea {
+  background-color: #222;
+  color: white;
+  border: 1px solid #444;
+}
+
+.contact-wrapper button {
+  background-color: #007BFF;
+  color: white;
+}
+
+.office-box {
+  background-color: #111;
+  color: white;
+  border: 1px solid #444;
+}
+
